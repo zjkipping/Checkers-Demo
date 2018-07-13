@@ -1,0 +1,16 @@
+﻿<Window x:Class="FinalProject.GameBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="GameBoard" Height="830" Width="1110" MinWidth="1110" MinHeight="830" Background="#FF4D4D4D">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="397*"/>
+            <RowDefinition Height="402*"/>
+        </Grid.RowDefinitions>
+        <Canvas Loaded="GameScreen_Loaded" Name="GameScreen" Background="#FF4D4D4D" VerticalAlignment="Center" Width="800" Height="800" HorizontalAlignment="Right" Margin="0,0,0,-1" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
